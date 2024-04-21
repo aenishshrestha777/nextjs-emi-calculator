@@ -72,7 +72,7 @@ const EmiCalculator: React.FC = () => {
       </button>
 
       {emi !== null && (
-        <p className="mt-4">EMI: {isNaN(parseFloat(emi)) ? "Invalid input" : emi}</p>
+        <p className="mt-4">EMI: Rs {isNaN(parseFloat(emi)) ? "Invalid input" : emi}</p>
       )}
     </div>
   );

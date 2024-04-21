@@ -18,14 +18,13 @@ export default function Home() {
  
          
           <h2 className="text-center text-5xl text-gray-700 my-12">
-            Invest in everything
+            Build Your Dream Home
           </h2>
           <h3 className="p-2 text-center text-1.7xl">
-            Online platform to invest in stocks, derivatives, mutual funds, and
-            more
+            ⭐⭐⭐⭐⭐ Rated 4.5/5 based on TrustPilot
           </h3>
           <button className="bg-blue-500 text-white  rounded-sm  hover:bg-gray-800 px-10 py-3 relative left-[50%] translate-x-[-50%] my-5">
-            Sign up now
+          Call Us Now
           </button>
         </div>
       </div>

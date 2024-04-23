@@ -23,7 +23,8 @@ const EmiCalculator: React.FC = () => {
     if (isNaN(principalNum) || isNaN(interestRateNum) || isNaN(loanTenureNum)) {
       // Handle case where values are not valid numbers
       setEmi(null);
-      // setInterestPayable(null);
+      setInterestPayable(null);
+      setTotalPayable(null);
       return;
     }
 
@@ -81,7 +82,7 @@ const EmiCalculator: React.FC = () => {
         Calculate EMI
       </button>
 
-      {emi !== null && (
+      {emi !== null && interestPayable !== null && totalPayable !== null && (
       <div>
         <p className="mt-4">EMI: Rs {isNaN(parseFloat(emi)) ? "Invalid input" : emi}</p>
         <p className="mt-4">Total Interest Payable: Rs {isNaN(parseFloat(interestPayable)) ? "Invalid input" : interestPayable}</p>
